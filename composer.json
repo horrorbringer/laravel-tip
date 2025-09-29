@@ -9,12 +9,17 @@
         "php": "^8.2",
         "barryvdh/laravel-dompdf": "^3.1",
         "cloudinary/cloudinary_php": "^3.1",
+        "darkaonline/l5-swagger": "^9.0",
         "laravel/framework": "^12.0",
+        "laravel/passport": "^13.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/socialite": "^5.23",
         "laravel/tinker": "^2.10.1",
         "mpdf/mpdf": "^8.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+        "knuckleswtf/scribe": "^5.3",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.41",
