@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('layouts.image-layout')
 @section('title_content', 'Upload Image')
 
 @section('content')

@@ -25,6 +25,14 @@ return Application::configure(basePath: dirname(__DIR__))
         }
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        $middleware->api(prepend: [
+            \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+        ]);
+
+        $middleware->alias([
+            'verified' => \App\Http\Middleware\EnsureEmailIsVerified::class,
+        ]);
+
         // if request is to api, always accept json else return normal response
         // if (str_starts_with(request()->path(), 'api/')) {
         //     $middleware->prepend(\App\Http\Middleware\AlwaysAcceptJson::class);

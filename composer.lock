@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e16dac90a3148fbd18ba60027bc75457",
+    "content-hash": "a04f6a55261b73727a86dba71d1d351e",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -1696,6 +1696,64 @@
                 }
             ],
             "time": "2025-02-03T10:55:03+00:00"
+        },
+        {
+            "name": "khmer-pdf/laravel-kh-pdf",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Duch-Nuon/laravel-kh-pdf.git",
+                "reference": "fba3ebb2454416ccc4aac99672be46f40c72bbbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Duch-Nuon/laravel-kh-pdf/zipball/fba3ebb2454416ccc4aac99672be46f40c72bbbb",
+                "reference": "fba3ebb2454416ccc4aac99672be46f40c72bbbb",
+                "shasum": ""
+            },
+            "require": {
+                "mpdf/mpdf": "^8.0",
+                "php": "^8.0"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "KhmerPdf\\LaravelKhPdf\\Providers\\PdfKhServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KhmerPdf\\LaravelKhPdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nuon",
+                    "email": "duchnuon@gmail.com"
+                }
+            ],
+            "description": "A simple Laravel package for supporting Khmer font in PDFs using mPdf.",
+            "homepage": "https://github.com/Duch-Nuon/laravel-kh-pdf",
+            "keywords": [
+                "khmer",
+                "khmer pdf",
+                "laravel",
+                "laravel pdf khmer",
+                "mpdf",
+                "package",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/Duch-Nuon/laravel-kh-pdf/issues",
+                "source": "https://github.com/Duch-Nuon/laravel-kh-pdf/tree/v1.0.2"
+            },
+            "time": "2024-11-12T17:07:32+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8539,6 +8597,67 @@
                 }
             ],
             "time": "2025-07-28T22:27:25+00:00"
+        },
+        {
+            "name": "laravel/breeze",
+            "version": "v2.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "1a29c5792818bd4cddf70b5f743a227e02fbcfcd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/1a29c5792818bd4cddf70b5f743a227e02fbcfcd",
+                "reference": "1a29c5792818bd4cddf70b5f743a227e02fbcfcd",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^11.0|^12.0",
+                "illuminate/filesystem": "^11.0|^12.0",
+                "illuminate/support": "^11.0|^12.0",
+                "illuminate/validation": "^11.0|^12.0",
+                "php": "^8.2.0",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "laravel/framework": "^11.0|^12.0",
+                "orchestra/testbench-core": "^9.0|^10.0",
+                "phpstan/phpstan": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2025-07-18T18:49:59+00:00"
         },
         {
             "name": "laravel/pail",
